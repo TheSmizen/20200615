@@ -23,5 +23,6 @@ callFunction(anExpression);
 let arrLength = function(myArr){
     return myArr.length;
 }
-
 console.log(arrLength([1,2,3]));
+
+module.exports = arrLength([]);

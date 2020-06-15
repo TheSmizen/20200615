@@ -1,3 +1,5 @@
+require("./functions");
+
 console.log("Node project starting. " + Date());
 let time = 501;
 //global object:
@@ -37,3 +39,8 @@ var sayBye = function(){
 };
 callFunction(sayBye);
 //Starting a new project so this starts to make sense.
+
+//So as things stand right now, if I run "node app"
+//-All the requires run as a script(in order?)
+//-This file runs as a script
+//-All the timeout and interval functions fire in their own time

@@ -1,5 +1,5 @@
+console.log(__filename + " starting. " + Date());
 require("./functions");
-
 console.log("Node project starting. " + Date());
 let time = 501;
 //global object:
@@ -18,11 +18,8 @@ let timer2 = setInterval(function(){
 let timer3 = setTimeout(function(){ //setTimeout runs once
     console.log("2000 milliseconds have passed in setTimeout");
 }, 2000);
-
 //Here in app.js all three timers get launched at the same time.
 //They will all fire only as and when their timers run out.
-
-console.log(__filename + " starting in " + __dirname);
 
 //2020-06-15
 //Payday woop
@@ -44,3 +41,5 @@ callFunction(sayBye);
 //-All the requires run as a script(in order?)
 //-This file runs as a script
 //-All the timeout and interval functions fire in their own time
+
+console.log(__filename + " ending. " + Date());
